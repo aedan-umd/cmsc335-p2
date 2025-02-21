@@ -13,14 +13,17 @@ html {
 
 body {
     border: 0.5rem solid green;
-    background: url('images/JimHenson.jpg') no-repeat left center fixed;
+    background: url('images/JimHenson.jpg') no-repeat center top;
     background-size: cover;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    margin: 0.5rem;
+    align-items: start;
+    margin: 0.5rem auto;
+    width: 1024px;
+    height: 768px; 
+    overflow: hidden;
+    position: absolute;
 }
 
 .header {
@@ -42,11 +45,14 @@ body {
 
 .main-content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    width: 100%;
-    padding-left: 4rem;
+    width: 1024px;  /* Fixed width */
+    height: 768px;  /* Fixed height */
+    margin: 0 auto;  /* Center the content horizontally */
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .link-wrapper {
