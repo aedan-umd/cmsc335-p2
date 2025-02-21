@@ -1,1 +1,205 @@
-/* You implement */
+html {
+    font-size: 14px;
+    color: white;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 0.5rem solid green;
+    background: url('images/JimHenson.jpg') no-repeat left center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.header {
+    position: absolute;
+    color: azure;
+    top: 2.5rem;
+    left: 2.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.header h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-decoration-line: underline;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding-left: 4rem;
+}
+
+.link-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-container {
+    align-self: center;
+    justify-content: center;
+    background: rgba(211, 211, 211, 0.8);
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    outline: 2px solid black;
+}
+
+.link {
+    color: brown;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.link:visited {
+    color: beige;
+}
+
+.link:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid azure;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+    color: black;
+    text-decoration-line: underline;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid darkred;
+}
+
+textarea {
+    resize: none;
+    border-color: grey;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #333;  /* Dark border to simulate button */
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(0.9);
+}
+
+.credit-card-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.credit-card-group input {
+    width: 3.5rem;
+    padding: 0.5rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.footer-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: lightblue;
+}
+
+footer {
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+    border: 1rem groove grey;
+
+}
+
+footer a {
+    color: beige;
+    font-size: 2rem;
+    text-decoration: none;
+    font-style: italic;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}

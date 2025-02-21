@@ -1,1 +1,27 @@
-<!-- You implement -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terp Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Terp Store</h1>
+    </header>
+
+    <main class="main-content">
+        <div class="link-wrapper">
+        <div class="link-container">
+            <a href="catalogInquiry.shtml" class="link" target="_blank">Catalog Inquiry</a>
+            <a href="placingOrder.shtml" class="link" target="_blank">Placing Order</a>
+        </div>
+    </div>
+    </main>
+
+    <div class="footer-wrapper">
+        <!--#include virtual="footer.shtml" -->
+    </div>
+</body>
+</html>
